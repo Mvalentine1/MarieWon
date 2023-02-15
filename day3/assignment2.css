@@ -1,0 +1,114 @@
+*{box-sizing: border-box;}
+
+.title{  
+    box-shadow: 7px 7px 7px yellow;
+    border: ridge 3px aquamarine;
+    background-color: fuchsia;
+    margin-top: 1.5em;
+    text-align: center;
+    }
+.container{
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+.Marie{
+    border-radius: 20%;
+    height: 100%;
+    border:ridge 10px purple;
+    position: relative;
+    filter: invert(20%);
+    box-shadow: 7px 7px 7px yellow;
+}
+.marieinfo{
+    width: 500px;
+    bottom: 120px;
+    position: relative;
+    left: 16px;
+    background-color:pink;
+    border: ridge 3px yellow;
+    padding-left: 1em;
+    font-size: 25px;
+    color:purple;
+    margin: auto;
+    opacity: .5;
+}
+.container1{
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+.Marie1{
+     height: 100%;
+    border:ridge 10px fuchsia;
+    position: relative;
+    filter: blur(3px);
+}
+.info{
+    width: 500px;
+    bottom: 250px;
+    position: relative;
+    left: 16px;
+    padding: 1em;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+    font-size: 24px;
+    opacity: .8;
+   color: aquamarine;
+   box-shadow: 5px 5px 3px;
+}
+.container2{
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+.Marie2{
+    border-radius: 5%;
+     height: 100%;
+    border:ridge 10px fuchsia;
+    position: relative;
+    filter:sepia(60%)
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gold;
+    font-size: 40px;
+}
+.bottom{
+    width: 500px;
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+    font-style: oblique;
+    background-color: red;
+    opacity: .6;
+    margin: auto;
+}
+.top{
+    position: relative;
+    bottom: 550px;
+    width: 199px;
+    right: 160px;
+    border-radius: 2px;
+    font-style: inherit;
+    background-color: red;
+    font-size: 18px;
+    margin: auto;
+}
+.right{
+    position: relative;
+    bottom: 500px;
+    width: 200px;
+    right: -250px;
+    border: solid 5px rgb(171, 13, 13) ;
+    box-shadow: 3px 3px 5px;
+    margin: auto;
+    color: rgb(229, 15, 15);
+    opacity: 1;
+    border-radius: 5%;
+}

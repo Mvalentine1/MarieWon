@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+.navbar{
+  background-color: :rgba(255, 197, 82, 0.8);
+  justify-content: center;
+  position: fixed;
+  width: 300%;
+  height: 90px;
+  top: 0px;
+  z-index:1;
+}
+
+.brand{
+  text-decoration: none;
+  color: white;
+}
+.icon{
+  width: 5%;
+}
+body{
+  font-family: Arial, sans-serif;
+}
+header{
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+nav{
+  background-color:#333333;
+color: #ffffff;
+text-align: center;
+padding: 10px;
+}
+
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+nav li{
+margin: 0 10px;
+}
+
+nav a{
+color: #ffffff;
+text-decoration: none;
+}
+
+nav a:hover{
+color: #cccccc;
+}
+
+main{
+margin: 0 auto;
+max-width: 800px;
+padding: 20px;
+}
+main section{
+margin: 20px 0;
+}
+/* TABLE */
+.table{
+  background-color: rgba(255, 197, 82, 0.8);
+}
+
+.table-header{
+  background-color:rgba(255, 197, 82, 0.8);
+}
+main h2{
+margin-top: 0;
+}
+
+main form label{
+display: block;
+margin-bottom: 5px;
+}
+
+img{
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+main form input[type="text"],
+main form input[type="email"],
+main form textarea {
+width: 100%;
+padding: 5px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+/* CARDS */
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.img-container{
+  overflow: hidden;
+  height: 40%;
+  display: block;
+}
+.card-img{
+  width: 100%;
+}
+.img-container{
+  height: 50%;  border-radius: 4px;
+}
+.card-img-top{
+  height: 100%;
+  filter: grayscale(90%);
+}
+.card-img-top:hover{
+  transform: scale(1.5);
+  transition: all 1s linear;
+  filter: saturate(1.5);
+}
+.card{
+  width: 32%;
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgb(#e2a60d80;
+  overflow: hidden;
+}
+.container-lg{
+  padding-bottom: 2%;
+/* IMAGES */
+.hero{
+  margin-top: 200px;
+}
+.fig-container{
+  width: 200%;
+  margin-bottom: 40px;
+}
+.img-fluid-link{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid{
+  width: 60%;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px 0px #e2a60d80; 
+}
+.img-fluid:hover{
+  width: 70%;
+  border-radius: 16px;
+  transition: all 1s linear;
+}
+footer{
+background-color: #e2a60d80;
+color: #ffffff;
+text-align: center;
+padding: 10px;
+}

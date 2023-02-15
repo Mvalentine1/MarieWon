@@ -1,0 +1,86 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+.float_container{
+    background-color: aqua;
+    border: solid gold;
+    display: inline-block;
+    width: 100%;
+}
+.div1, .div2, .div3{width: 30%;height: 100px; float: right;}
+.div1{background-color: violet;}
+.div2{background-color: fuchsia;}
+.div3{background-color: orange;}
+/* flex property*/
+.flex_container{
+    background-color: chartreuse;
+    border: solid crimson;display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divFlex1, .divFlex2, .divFlex3{width:30%;height: 100px;}
+.divFlex1{background-color: yellow;}
+.divFlex2{background-color: purple;}
+.divFlex3{background-color: blue;}
+/* Template Intro Image */
+.container{position: relative;margin-top: 5em;}
+.introImage{width: 100%;}
+.author{
+position: absolute;
+top: 30%;
+left: 20%; right: 20%;
+text-align: center;
+font-size: 300%;
+}
+.intro{
+    position: absolute;
+    top: 12%;
+    left: 20%; right: 20%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    font-style: italic; 
+}
+.navTabs{border: solid red;
+position: absolute;
+width: 100%;
+bottom: 10%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.nav{
+    display: inline-block;
+    padding: 1em;
+    width: 30%;
+    background-color: rgba(220, 20, 60, 0.783);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.nav:hover{
+    background-color: rgba(0, 255, 255, 0.67);
+    box-shadow: 0px 0px 5px 1px white;
+}
+/* MEDIUM SCREEN */
+@media only screen and (max-width:1000px) {
+    .navTabs{bottom:20%}
+    .intro{font-size: 1em;}
+    .author{top:-2% ;}
+    .nav{width:25%;font-size: 1.1em;}
+}
+@media only screen and (max-width:699px) and (main-width:500px){
+    .author{text-align: left;left: 5%;top: -5%; font-size: 2.5em;}
+    .intro{top: 10%;left: 30%;right: 40%;}
+    .navTabs{bottom: 5%}
+    .nav{width: 20%;padding: 0.5em;font-size: 1em;}
+}
+/* SMALL SCREEN */
+@media only screen and (max-width:499px){
+    .intro{display:none;}
+    .author{top: -5%;font-size: 1.5em;}
+    .navTabs{bottom: 5%}
+    .nav{width: 33%;padding: 0.2em;font-size: 0.8em; border-radius: 0%;}
+}

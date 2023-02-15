@@ -1,0 +1,19 @@
+.name{background-color: fuchsia;}
+.fly{width: 500px;}
+.fly2{width: 500px}
+.fly3{width: 500px;}
+/* section for fashion killa */
+.container{ background-color: aqua;
+    padding-top: 2em;
+}
+.title{
+    border: solid 5px;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 1em;
+    width: 80%;
+    margin: auto;
+    box-shadow: 10px 10px 5px yellow;
+    margin-bottom: 2em;
+}
+.fly,.fly2{width: 45%;}

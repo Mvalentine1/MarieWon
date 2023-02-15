@@ -1,0 +1,340 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+
+.body{
+    background-color:pink;
+    animation-name: animation;
+    animation-delay: 2s;
+}
+
+.pos{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.head{
+   
+    display: block;
+    width: 100%;
+    animation-name: animation;
+    animation-duration: 2s;
+    border-bottom: 3px solid rgb(214, 12, 140);
+}
+//*header*//
+header{
+    background-image: url('./lollipop-boutique-header.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-text{
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .boutique-name{
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quote {
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes fadeIn{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+
+@keyframes animation {
+    0% {transform: scale(0);}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {transform: scale(1);}
+}
+
+@keyframes animationSecond {
+    0% {opacity: 0;}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.opacityEffect{
+    animation-name: animationSecond;
+    animation-duration: 2s;
+}
+
+.head img{
+    width: 100%;
+    display: block;
+}
+
+.navs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: pink;
+    padding-top: 1.5%;
+}
+
+.navs a{
+    font-size: 1.5vw;
+    color: rgb(214, 12, 140 / 90%);
+    text-decoration: none;
+}
+
+#goToCartLink{
+    position: relative;
+}
+
+.cartBag{
+    position: absolute;
+    width: 36%;
+    top: -35%;
+    right: -35%;   
+}
+
+#badge{
+    position: absolute;
+    top: -50%;
+    right: -42%;
+    padding: 4% 7%;
+    border-radius: 50%;
+    background: fuchsia;
+    color: whitesmoke;
+    font-size: 35%;
+    font-weight: bold;
+}
+
+.block{
+    display: block;
+    width: 100%;
+    height: 1em;
+    background-color: aqua;
+}
+
+.imageContainer{
+    display: flex;
+    border: 3px solid lightgray;
+}
+
+.logo{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 23%;
+    height: 7%;
+}
+
+.intImage{
+    width: 75.1%;
+}
+
+.introImage{    
+    animation-duration: 2s;
+    display: block;
+    width: 100%;
+}
+
+.navTabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3% 0;
+}
+
+.nav{
+    padding: 1%;
+    width: 25%;
+    background-color: rgb(71 176 179 / 40%);
+    color: rgb(214, 12, 140/ 90%);
+    text-align: center;
+    font-size: 1.25vw;
+    border-radius: 10px;
+    transition: 500ms;
+    text-decoration: none;
+    font-weight: bold;
+    animation-name: navAnimation;
+    animation-duration: 2s;
+}
+
+.selected{
+    background-color: lightgray;
+    border: solid 5px darkgray;
+}
+
+@keyframes navAnimation {
+    0% {transform: scale(0);}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {transform: scale(1);}
+}
+
+.nav:hover{
+    background-color: rgba(4, 145, 53, 0.6);
+    color: rgb(128, 0, 117);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 1px white;
+}
+.container{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 30em;
+    margin: 1%;
+    border: solid 0.2px;
+}
+
+.imgCont{
+    width: 100%;
+    height: 62%;
+    overflow: hidden;
+   
+}
+
+.itemImg{
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.infoItem{
+    text-align: center;
+}
+
+.p1{
+    color: lightseagreen;
+    font-weight: 900;
+}
+
+.p2{
+    font-weight: 900;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.p3{
+    color: sienna;
+    margin-top: -1em;
+    font-weight: bold;
+}
+
+.p4{
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.p5{    
+    color: red;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.brand{
+    color: black;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.aboutUs {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #afafaf5c;
+    margin-top: 12%;
+    border-top: 13px solid #b37304bf;
+    padding: 2%;
+}
+
+.linkItem{
+    display: block;
+}
+
+.link{
+    background-color: rgb(50,50,50);
+    color: whitesmoke;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    font-weight: 900;
+    
+}
+
+.link:hover{
+    background-color: whitesmoke;
+    color: rgb(50,50,50);
+}
+
+.footer{
+    background-color: #12d0edb3;
+    display: block;
+    border-top: 20px solid #fb0fd3bf;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.call{
+    text-align: center;
+}
+
+.social{
+    text-align: center;
+}
+
+.social img{
+    width: 2%;
+}
+
+.author{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+//*NAV BAR*//
+nav{
+    background-color: #e40592;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a{
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  

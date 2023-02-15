@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+:root{
+    --primary:#164775;
+    --primaryLight:#006d00;
+    --primaryDark:;
+    --secondary:;
+    --secondaryLight:;
+    --secondaryDark:;
+    --animationSlide:"slideBus"
+}
+.h1title{background-color: var(--primaryDark);color: var(--secondaryDark);
+}
